@@ -11,6 +11,7 @@
     width: 100vw;
     display: grid;
     grid-template-rows: 540px 200px 100px;
+    min-width: 1000px;
 
 }
 
@@ -46,7 +47,18 @@ header {
 }
 
 footer {
-    background: blue;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    margin: 0 20px;
+    padding-top: 10px;
+    flex-flow: row wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: none;
 }
 
 /* =========================================
@@ -58,6 +70,25 @@ footer {
     flex: 1;
     background: purple;
     margin: 2px;
+    background-position: 50% 20%;
+    background-size: 150%;
+}
+
+.a2 {
+    background-image: url("/images/promo_iphone5c_2x.jpg");
+    
+}
+
+.a1 {
+    background-image: url("/images/promo_iphone5s_2x.jpg")
+}
+
+.a3 {
+    background-image: url("images/promo_30_years_2x.jpg");
+}
+
+.a4 {
+    background-image: url("images/promo_supplier_responsibility_2x.jpg");
 }
 
 
@@ -98,4 +129,50 @@ footer {
     width: 10px;
     border: 1px solid white;
     z-index: 99;
+}
+
+/* 
+================================
+ Footer
+===============================
+*/
+
+footer a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p, ul {
+    flex: 1;
+    flex-basis: 50%;
+    font-size: .7em;
+
+}
+
+footer ul li {
+    display: inline;
+    text-align: center;
+    padding: 2px;
+    border-right: 1px solid lightgray;
+    text-align: center;
+}
+
+footer ul li:last-child {
+    border: none;
+}
+
+li img {
+    height: 1em;
+}
+
+footer ul:last-child li {
+    border: none;
+}
+
+footer ul:last-child li:last-child {
+    border-left: 1px solid lightgray;
 }
