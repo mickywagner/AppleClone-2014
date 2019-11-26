@@ -1,4 +1,6 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,23 +15,33 @@
 }
 
 header {
-    background: green;
+    background: gray;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(94, 94, 94);
     position: absolute;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10px;
+    margin-top: 20px;
     z-index: 999; 
 }
 
 .hero {
-    background: red;
     grid-row: 1;
     position: relative;
+    background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg");
+    background-position: 50% 95%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 .sub-hero {
-    background: yellow;
     display: flex;
 }
 
@@ -46,4 +58,44 @@ footer {
     flex: 1;
     background: purple;
     margin: 2px;
+}
+
+
+/* ======================================
+    Hero
+=========================================
+*/
+
+.hero h1, .hero h2, .hero h3 {
+    font-weight: lighter;
+    width: 65%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    min-width: 600px;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero h3 {
+    font-size: 1.5em;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.triangle {
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    z-index: 99;
 }
