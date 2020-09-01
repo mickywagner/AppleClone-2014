@@ -78,20 +78,24 @@ ul {
 }
 
 .a2 {
-    background-image: url("/images/promo_iphone5c_2x.jpg");
+    background-image: url("images/promo_iphone5c_2x.jpg");
+    
     
 }
 
 .a1 {
-    background-image: url("/images/promo_iphone5s_2x.jpg")
+    background-image: url("images/promo_iphone5s_2x.jpg");
+    
 }
 
 .a3 {
     background-image: url("images/promo_30_years_2x.jpg");
+    
 }
 
 .a4 {
     background-image: url("images/promo_supplier_responsibility_2x.jpg");
+  
 }
 
 
@@ -182,8 +186,7 @@ header nav ul li:first-child {
     font-size: 1.5em;
 }
 
-.search {
-    position: relative;
+input {
     left: 5%;
     top: 20%;
     width: 90%;
@@ -191,12 +194,29 @@ header nav ul li:first-child {
     border: 1px black solid;
     box-shadow: -1px -1px rgba(41, 41, 41, .5);
     border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(120,119,120) 50%, 
+        rgb(104,104,104) 50%
+    );
+    color: gray;
+    padding-left: 20px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search {
+    position: relative;
 }
 
 .fa-search {
     position: absolute;
     top: 3px;
     left: 4px;
+    
 }
 
 /* 
