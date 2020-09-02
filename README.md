@@ -13,8 +13,9 @@ The idea was to get the design/layout elements as close to Apple's website, focu
 
 <h3>Technical Sheet</h3>
 
+<strong>
 <ul>
   <li>HTML 5</li>
   <li>CSS 3 - Flexbox, Grid</li>
 </ul>
-
+</strong>
